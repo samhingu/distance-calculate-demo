@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        .route div {
+            float: left
+        }
+
+        .route {
+            clear: both;
+        }
+
+        .key {
+            background: lightgray;
+            border: 2px solid darkgray;
+            margin: 3px 0px;
+            border-radius: 64px;
+            padding: 6px;
+        }
+
+        .distance {
+            padding: 2px;
+            margin: 8px auto;
+            border: 1px solid gray;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+      <tr>
+        <td colspan="2">
+          <h2>Destination Routes</h2>
+        </td>
+      </td>
+        <tr>
+            <td>
+                FROM :
+                <select id="ddlFrom" onChange="calculateRoute()"></select>
+            </td>
+            <td>
+                TO:
+                <select id="ddlTo" onChange="calculateRoute()"></select>
+            </td>
+        </tr>
+    </table>
+    <div id="content"></div>
+</body>
+<script src="script.js"></script>
+</html>
